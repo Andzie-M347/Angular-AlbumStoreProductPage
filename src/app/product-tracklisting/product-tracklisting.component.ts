@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ProductService } from '../product.service';
-import { Album } from 'app/album';
+import { Album } from '../album';
 
 @Component({
-  selector: 'app-product-page',
-  templateUrl: './product-page.component.html',
-  styleUrls: ['./product-page.component.css']
+  selector: 'app-product-tracklisting',
+  templateUrl: './product-tracklisting.component.html',
+  styleUrls: ['./product-tracklisting.component.css']
 })
-export class ProductPageComponent implements OnInit {
+export class ProductTracklistingComponent implements OnInit {
 
   albumInfo: Album;
+
   constructor(private _productService: ProductService) { }
 
   ngOnInit() {
